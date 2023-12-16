@@ -1,12 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 import Intro from "./screens/Intro";
+import GetStarted from "./screens/GetStarted";
+import SwiperComponent from "./components/Swiper";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <Intro />
+      <GetStarted />
     </View>
   );
 }
