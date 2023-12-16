@@ -152,7 +152,7 @@ const Login = () => {
             </Text>
           </View>
 
-          <View
+          <TouchableOpacity
             style={{
               position: "absolute",
               height: 60,
@@ -167,7 +167,7 @@ const Login = () => {
             }}
           >
             <Entypo name="chat" size={24} color="black" />
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>

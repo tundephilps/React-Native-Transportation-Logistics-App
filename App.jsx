@@ -4,12 +4,13 @@ import Intro from "./screens/Intro";
 import GetStarted from "./screens/GetStarted";
 import SwiperComponent from "./components/Swiper";
 import Login from "./screens/Login";
+import CreateAccount from "./screens/CreateAccount";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <Login />
+      <CreateAccount />
     </View>
   );
 }
