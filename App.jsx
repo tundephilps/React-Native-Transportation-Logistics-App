@@ -3,12 +3,13 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import Intro from "./screens/Intro";
 import GetStarted from "./screens/GetStarted";
 import SwiperComponent from "./components/Swiper";
+import Login from "./screens/Login";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <GetStarted />
+      <Login />
     </View>
   );
 }
