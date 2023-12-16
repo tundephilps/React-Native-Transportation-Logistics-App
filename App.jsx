@@ -5,12 +5,13 @@ import GetStarted from "./screens/GetStarted";
 import SwiperComponent from "./components/Swiper";
 import Login from "./screens/Login";
 import CreateAccount from "./screens/CreateAccount";
+import OTPScreen from "./screens/OTPScreen";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <CreateAccount />
+      <OTPScreen />
     </View>
   );
 }
