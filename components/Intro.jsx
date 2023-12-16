@@ -18,6 +18,7 @@ const Intro = () => {
           style={{
             height: 30,
             width: "80%",
+            marginBottom: "10%",
           }}
           source={require("../assets/shuttlers.png")}
           resizeMode="contain"
