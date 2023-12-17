@@ -6,12 +6,13 @@ import SwiperComponent from "./components/Swiper";
 import Login from "./screens/Login";
 import CreateAccount from "./screens/CreateAccount";
 import OTPScreen from "./screens/OTPScreen";
+import Homepage from "./screens/Homepage";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <OTPScreen />
+      <Homepage />
     </View>
   );
 }
