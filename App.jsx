@@ -7,12 +7,13 @@ import Login from "./screens/Login";
 import CreateAccount from "./screens/CreateAccount";
 import OTPScreen from "./screens/OTPScreen";
 import Homepage from "./screens/Homepage";
+import Discover from "./screens/Discover";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <Homepage />
+      <Discover />
     </View>
   );
 }
