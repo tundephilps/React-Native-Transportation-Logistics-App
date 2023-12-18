@@ -1,9 +1,12 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const Hire = () => {
+import { Ionicons } from "@expo/vector-icons";
+const VehicleDetails = () => {
   return (
-    <View style={{ height: "100%" }}>
+    <SafeAreaView style={{ height: "100%" }}>
+      {/* Header */}
       <View
         style={{
           padding: 16,
@@ -24,7 +27,7 @@ const Hire = () => {
         >
           <Ionicons name="arrow-back-outline" size={18} color="black" />
         </TouchableOpacity>
-        <Text>Hire a vehicle</Text>
+        <Text style={{ fontWeight: "800", fontSize: 18 }}>Vehicle details</Text>
         <TouchableOpacity
           style={{
             height: 35,
@@ -39,10 +42,11 @@ const Hire = () => {
           <Ionicons name="arrow-back-outline" size={18} color="black" />
         </TouchableOpacity>
       </View>
-    </View>
+      <View style={{ padding: 16 }}></View>
+    </SafeAreaView>
   );
 };
 
-export default Hire;
+export default VehicleDetails;
 
 const styles = StyleSheet.create({});

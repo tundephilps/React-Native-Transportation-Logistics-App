@@ -9,12 +9,14 @@ import OTPScreen from "./screens/OTPScreen";
 import Homepage from "./screens/Homepage";
 import Discover from "./screens/Discover";
 import Location from "./screens/Location";
+import Vehicle from "./screens/Vehicle";
+import VehicleDetails from "./screens/VehicleDetails";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <Location />
+      <VehicleDetails />
     </View>
   );
 }
