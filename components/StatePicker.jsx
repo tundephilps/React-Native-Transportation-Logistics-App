@@ -71,21 +71,20 @@ const StatePicker = () => {
         <Text style={styles.buttonText}>{selectedState}</Text>
         <MaterialIcons name={arrowDirection} size={24} color="white" />
       </TouchableOpacity>
-      <View style={styles.dropdown}>
-        {dropdownOpen && (
-          <ScrollView>
-            {states.map((state) => (
-              <TouchableOpacity
-                key={state}
-                style={styles.dropdownItem}
-                onPress={() => selectState(state)}
-              >
-                <Text style={styles.dropdownItemText}>{state}</Text>
-              </TouchableOpacity>
-            ))}
-          </ScrollView>
-        )}
-      </View>
+
+      {dropdownOpen && (
+        <ScrollView style={styles.dropdown}>
+          {states.map((state) => (
+            <TouchableOpacity
+              key={state}
+              style={styles.dropdownItem}
+              onPress={() => selectState(state)}
+            >
+              <Text style={styles.dropdownItemText}>{state}</Text>
+            </TouchableOpacity>
+          ))}
+        </ScrollView>
+      )}
     </View>
   );
 };
@@ -109,14 +108,14 @@ const styles = StyleSheet.create({
     fontWeight: "300",
   },
   dropdown: {
-    zIndex: 99,
+    height: "1800%",
     backgroundColor: "white",
-    width: 340,
+    zIndex: 5,
+    width: 600,
     borderRadius: 25,
     position: "absolute",
     top: "100%",
-    //left: 0,
-    right: 0,
+    //right: 5,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -129,6 +128,7 @@ const styles = StyleSheet.create({
   dropdownItem: {
     paddingHorizontal: 12,
     paddingVertical: 8,
+    fontWeight: "700",
   },
   dropdownItemText: {
     color: "black",

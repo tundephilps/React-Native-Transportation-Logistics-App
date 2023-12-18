@@ -8,12 +8,13 @@ import CreateAccount from "./screens/CreateAccount";
 import OTPScreen from "./screens/OTPScreen";
 import Homepage from "./screens/Homepage";
 import Discover from "./screens/Discover";
+import Location from "./screens/Location";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <Discover />
+      <Location />
     </View>
   );
 }

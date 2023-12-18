@@ -46,7 +46,7 @@ const data = [
 
 const Discover = () => {
   return (
-    <SafeAreaView style={{ height: "100%" }}>
+    <SafeAreaView style={{ height: "100%", zIndex: 1 }}>
       <View
         style={{
           padding: 16,
@@ -96,7 +96,7 @@ const Discover = () => {
       <View style={{ padding: 16 }} />
 
       {/* Card */}
-      <ScrollView style={{ paddingHorizontal: 16, position: "relative" }}>
+      <ScrollView style={{ paddingHorizontal: 16 }}>
         {data.map((item, index) => (
           <View key={index} style={styles.card}>
             <View
