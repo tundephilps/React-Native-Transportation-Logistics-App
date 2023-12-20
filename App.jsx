@@ -13,12 +13,16 @@ import Vehicle from "./screens/Vehicle";
 import VehicleDetails from "./screens/VehicleDetails";
 import Checkout from "./screens/Checkout";
 import Charter from "./screens/Charter";
+import CharterPreview from "./screens/CharterPreview";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {
   return (
     <View>
-      <StatusBar style="auto" />
-      <Charter />
+      <GestureHandlerRootView>
+        <StatusBar style="auto" />
+        <CharterPreview />
+      </GestureHandlerRootView>
     </View>
   );
 }
