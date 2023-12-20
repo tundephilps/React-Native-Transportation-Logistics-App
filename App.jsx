@@ -12,12 +12,13 @@ import Location from "./screens/Location";
 import Vehicle from "./screens/Vehicle";
 import VehicleDetails from "./screens/VehicleDetails";
 import Checkout from "./screens/Checkout";
+import Charter from "./screens/Charter";
 
 export default function App() {
   return (
     <View>
       <StatusBar style="auto" />
-      <Checkout />
+      <Charter />
     </View>
   );
 }
