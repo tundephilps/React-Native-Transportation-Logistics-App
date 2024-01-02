@@ -117,7 +117,9 @@ const Charter = () => {
               <Text style={{ fontWeight: "200", fontSize: 10, color: "gray" }}>
                 Starting from
               </Text>
-              <Text style={{ fontWeight: "700", color: "green", fontSize: 15 }}>
+              <Text
+                style={{ fontWeight: "700", color: "#20e481", fontSize: 15 }}
+              >
                 N70,000
               </Text>
             </View>
@@ -138,7 +140,7 @@ const Charter = () => {
             }}
           >
             <View style={{ flexDirection: "column", alignItems: "center" }}>
-              <Octicons name="dot" size={28} color="green" />
+              <Octicons name="dot" size={28} color="#20e481" />
               <View style={{ display: "flex", gap: 8 }}>
                 <View style={styles.dash} />
                 <View style={styles.dash} />
@@ -190,7 +192,7 @@ const Charter = () => {
                     },
                     {
                       borderColor:
-                        selectedOption === option.id ? "green" : "gray",
+                        selectedOption === option.id ? "#20e481" : "gray",
                     },
                   ]}
                 >
@@ -198,7 +200,7 @@ const Charter = () => {
                     <View
                       style={[
                         { width: 12, height: 12, borderRadius: 6 },
-                        { backgroundColor: "green" },
+                        { backgroundColor: "#20e481" },
                       ]}
                     />
                   )}

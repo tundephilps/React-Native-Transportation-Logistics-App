@@ -61,7 +61,7 @@ const Homepage = () => {
                 gap: 12,
               }}
             >
-              <Feather name="search" size={24} color="green" />
+              <Feather name="search" size={24} color="#20e481" />
               <TextInput placeholder="Where would you like to go" />
             </View>
           </View>
@@ -127,9 +127,9 @@ const Homepage = () => {
             Discover more routes in your area you can book from.
           </Text>
           <View style={{ padding: 20 }} />
-          <Text style={{ color: "green" }}>
+          <Text style={{ color: "#20e481" }}>
             View all routes{" "}
-            <AntDesign name="arrowright" size={16} color="green" />
+            <AntDesign name="arrowright" size={16} color="#20e481" />
           </Text>
           <Image
             style={{
@@ -146,7 +146,7 @@ const Homepage = () => {
         <Entypo
           name="dot-single"
           size={35}
-          color="green"
+          color="#20e481"
           style={{
             alignSelf: "center",
           }}

@@ -77,10 +77,12 @@ const Stops = () => {
         </View>
         <View style={{ padding: 12 }} />
         <View style={{ flexDirection: "row", alignItems: "center", gap: 8 }}>
-          <Text style={{ color: "green", fontWeight: "700" }}>
+          <Text style={{ color: "#20e481", fontWeight: "700" }}>
             BUS STOP LOCATIONS
           </Text>
-          <View style={{ width: 180, height: 0.9, backgroundColor: "green" }} />
+          <View
+            style={{ width: 180, height: 0.9, backgroundColor: "#20e481" }}
+          />
         </View>
 
         <View style={{ padding: 8 }} />

@@ -93,7 +93,7 @@ const BottomSheet = () => {
         <View style={{ flexDirection: "row", gap: 12 }}>
           {/* LineMAp */}
           <View style={{ flexDirection: "column", alignItems: "center" }}>
-            <Octicons name="dot" size={28} color="green" />
+            <Octicons name="dot" size={28} color="#20e481" />
             <View style={{ display: "flex", gap: 3 }}>
               <View style={styles.dash} />
               <View style={styles.dash} />
@@ -241,7 +241,7 @@ const BottomSheet = () => {
             <Text style={{ fontWeight: "200", fontSize: 10, color: "gray" }}>
               Starting from
             </Text>
-            <Text style={{ fontWeight: "700", color: "green", fontSize: 15 }}>
+            <Text style={{ fontWeight: "700", color: "#20e481", fontSize: 15 }}>
               N70,000
             </Text>
           </View>
@@ -258,7 +258,7 @@ const BottomSheet = () => {
           }}
         >
           <Text>Total estimated starting price</Text>
-          <Text style={{ color: "green", fontWeight: "700" }}>N100,000</Text>
+          <Text style={{ color: "#20e481", fontWeight: "700" }}>N100,000</Text>
         </View>
         <View style={{ padding: 32 }} />
       </Animated.ScrollView>

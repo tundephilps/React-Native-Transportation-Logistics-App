@@ -16,13 +16,14 @@ import Charter from "./screens/Charter";
 import CharterPreview from "./screens/CharterPreview";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Stops from "./screens/Stops";
+import Book from "./screens/Book";
 
 export default function App() {
   return (
     <View>
       <GestureHandlerRootView>
         <StatusBar style="auto" />
-        <Stops />
+        <Book />
       </GestureHandlerRootView>
     </View>
   );

@@ -11,7 +11,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import StatePicker from "../components/StatePicker";
 import { FontAwesome5 } from "@expo/vector-icons";
-import { FontAwesome } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 import { Octicons } from "@expo/vector-icons";
@@ -108,7 +107,7 @@ const Discover = () => {
               }}
             >
               <View style={{ flexDirection: "column", alignItems: "center" }}>
-                <Octicons name="dot" size={28} color="green" />
+                <Octicons name="dot" size={28} color="#20e481" />
                 <View style={{ display: "flex", gap: 3 }}>
                   <View style={styles.dash} />
                   <View style={styles.dash} />
@@ -167,7 +166,7 @@ const Discover = () => {
                   {item.stops} Stops along this route
                 </Text>
               </View>
-              <Text style={{ fontWeight: "700", color: "green" }}>
+              <Text style={{ fontWeight: "700", color: "#20e481" }}>
                 {item.code}
               </Text>
             </View>

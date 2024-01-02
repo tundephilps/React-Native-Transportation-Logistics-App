@@ -148,7 +148,7 @@ const Login = () => {
           >
             <Text style={{ fontSize: 12, fontWeight: "200" }}>
               Dont have an account?{" "}
-              <Text style={{ color: "green" }}>Create One</Text>
+              <Text style={{ color: "#20e481" }}>Create One</Text>
             </Text>
           </View>
 

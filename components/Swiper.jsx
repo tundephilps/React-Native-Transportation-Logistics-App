@@ -26,7 +26,7 @@ const SwiperComponent = () => {
         showsButtons={false}
         loop={true}
         onIndexChanged={(index) => setSwiperIndex(index)}
-        activeDotColor="#00FF80"
+        activeDotColor="#A10F7E"
         activeDotStyle={{ width: 15, height: 8 }}
         dotStyle={{ width: 8, height: 8 }}
         autoplay={true}

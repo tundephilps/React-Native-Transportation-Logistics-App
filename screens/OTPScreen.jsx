@@ -105,7 +105,7 @@ const OTPScreen = ({ navigation, timerActive, resetTimer }) => {
         <Text
           style={{
             textAlign: "center",
-            color: "green",
+            color: "#20e481",
             textDecorationLine: "underline",
           }}
         >

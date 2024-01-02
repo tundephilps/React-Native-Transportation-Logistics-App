@@ -162,7 +162,7 @@ const Vehicle = () => {
                     <Text style={{ color: "gray", fontSize: 12 }}>
                       Starting from
                     </Text>
-                    <Text style={{ fontWeight: "700", color: "green" }}>
+                    <Text style={{ fontWeight: "700", color: "#20e481" }}>
                       {item.price}
                     </Text>
                   </View>

@@ -85,7 +85,7 @@ const Checkout = () => {
                 style={styles.checkbox}
                 value={isChecked}
                 onValueChange={setChecked}
-                color={isChecked ? "green" : undefined}
+                color={isChecked ? "#20e481" : undefined}
               />
               <View
                 style={{
@@ -110,7 +110,7 @@ const Checkout = () => {
                 >
                   Starting from
                 </Text>
-                <Text style={{ color: "green", fontWeight: "600" }}>
+                <Text style={{ color: "#20e481", fontWeight: "600" }}>
                   N70,000
                 </Text>
               </View>
@@ -168,7 +168,7 @@ const Checkout = () => {
                 style={styles.checkbox}
                 value={isChecked}
                 onValueChange={setChecked}
-                color={isChecked ? "green" : undefined}
+                color={isChecked ? "#20e481" : undefined}
               />
               <View
                 style={{
@@ -193,7 +193,7 @@ const Checkout = () => {
                 >
                   Starting from
                 </Text>
-                <Text style={{ color: "green", fontWeight: "600" }}>
+                <Text style={{ color: "#20e481", fontWeight: "600" }}>
                   N25,000
                 </Text>
               </View>
@@ -251,7 +251,7 @@ const Checkout = () => {
                 style={styles.checkbox}
                 value={isChecked}
                 onValueChange={setChecked}
-                color={isChecked ? "green" : undefined}
+                color={isChecked ? "#20e481" : undefined}
               />
               <View
                 style={{
@@ -276,7 +276,7 @@ const Checkout = () => {
                 >
                   Starting from
                 </Text>
-                <Text style={{ color: "green", fontWeight: "600" }}>
+                <Text style={{ color: "#20e481", fontWeight: "600" }}>
                   N35,000
                 </Text>
               </View>
@@ -331,7 +331,7 @@ const Checkout = () => {
           }}
         >
           <View style={{ flexDirection: "row", gap: 8 }}>
-            <MaterialIcons name="info-outline" size={24} color="green" />
+            <MaterialIcons name="info-outline" size={24} color="#20e481" />
             <Text style={{ fontSize: 12, color: "gray" }}>
               Kindly note that the total amount to be paid for this Charter
               request is sbuject to a further review by our team.

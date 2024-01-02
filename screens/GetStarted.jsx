@@ -113,7 +113,7 @@ const GetStarted = () => {
         >
           <Text style={{ fontSize: 12, fontWeight: "200" }}>
             Already have an account?{" "}
-            <Text style={{ color: "green" }}>Log In</Text>
+            <Text style={{ color: "#20e481" }}>Log In</Text>
           </Text>
         </View>
 

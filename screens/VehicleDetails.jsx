@@ -132,7 +132,7 @@ const VehicleDetails = () => {
             {"   "}
             5.0 Ratings
           </Text>
-          <Text style={{ fontSize: 19, fontWeight: "700", color: "green" }}>
+          <Text style={{ fontSize: 19, fontWeight: "700", color: "#20e481" }}>
             N100,000
           </Text>
         </View>
@@ -283,22 +283,22 @@ const VehicleDetails = () => {
               alignItems: "center",
             }}
           >
-            <FontAwesome name="circle-o" size={24} color="green" />
+            <FontAwesome name="circle-o" size={24} color="#20e481" />
             <View style={styles.line} />
             <View style={styles.line} />
-            <FontAwesome name="circle-o" size={24} color="green" />
+            <FontAwesome name="circle-o" size={24} color="#20e481" />
             <View style={styles.line} />
             <View style={styles.line} />
-            <FontAwesome name="circle-o" size={24} color="green" />
+            <FontAwesome name="circle-o" size={24} color="#20e481" />
             <View style={styles.line} />
             <View style={styles.line} />
-            <FontAwesome name="circle-o" size={24} color="green" />
+            <FontAwesome name="circle-o" size={24} color="#20e481" />
             <View style={styles.line} />
             <View style={styles.line} />
-            <FontAwesome name="circle-o" size={24} color="green" />
+            <FontAwesome name="circle-o" size={24} color="#20e481" />
             <View style={styles.line} />
             <View style={styles.line} />
-            <FontAwesome name="circle-o" size={24} color="green" />
+            <FontAwesome name="circle-o" size={24} color="#20e481" />
           </View>
           <View
             style={{
@@ -322,7 +322,7 @@ const VehicleDetails = () => {
       </ScrollView>
       <View
         style={{
-          //  backgroundColor: "green",
+          //  backgroundColor: "#20e481",
           height: 80,
           borderTopColor: "lightgray",
           borderTopWidth: 1,
@@ -367,7 +367,7 @@ const VehicleDetails = () => {
         </View>
         <TouchableOpacity
           style={{
-            backgroundColor: "green",
+            backgroundColor: "#20e481",
             height: 52,
             display: "flex",
             alignItems: "center",
@@ -392,7 +392,7 @@ export default VehicleDetails;
 const styles = StyleSheet.create({
   line: {
     height: 12,
-    borderLeftColor: "green",
+    borderLeftColor: "#20e481",
     borderLeftWidth: 3,
   },
 });

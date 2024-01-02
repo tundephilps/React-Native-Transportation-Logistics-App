@@ -43,7 +43,7 @@ const TimerComponent = () => {
     <View>
       <Text style={styles.timerText}>
         Resend code in {"  "}
-        <Text style={{ color: "green" }}>
+        <Text style={{ color: "#20e481" }}>
           {""}
           {`${minutes}:${seconds < 10 ? "0" : ""}${seconds}`}
         </Text>
@@ -60,7 +60,7 @@ const TimerComponent = () => {
 
 const styles = StyleSheet.create({
   timerText: {
-    fontWeight: "green",
+    fontWeight: "#20e481",
     fontWeight: "200",
   },
   resendButton: {
