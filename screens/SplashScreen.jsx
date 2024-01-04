@@ -1,10 +1,23 @@
 import { StyleSheet, Text, View, Image } from "react-native";
-import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const Intro = () => {
+import React, { useEffect } from "react";
+
+import { useNavigation } from "@react-navigation/native";
+
+const SplashScreen = () => {
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.replace("GetStarted"); // Replace 'MainScreen' with your actual screen name
+    }, 3000); // 5000 milliseconds (5 seconds)
+
+    return () => clearTimeout(timer); // Clear the timeout if the component unmounts before 5 seconds
+  }, [navigation]);
+
   return (
-    <SafeAreaView style={{}}>
+    <SafeAreaView style={{ backgroundColor: "white" }}>
       <View
         style={{
           position: "relative",
@@ -38,6 +51,6 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default SplashScreen;
 
 const styles = StyleSheet.create({});

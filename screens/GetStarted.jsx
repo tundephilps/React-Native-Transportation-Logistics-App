@@ -5,9 +5,12 @@ import Swiper from "react-native-swiper";
 import SwiperComponent from "../components/Swiper";
 import { Entypo } from "@expo/vector-icons";
 
+import { useNavigation } from "@react-navigation/native";
+
 const GetStarted = () => {
+  const navigation = useNavigation(); // Get the navigation object
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: "white", height: "100%" }}>
       <View style={{ padding: 16 }}>
         <View
           style={{
@@ -30,11 +33,7 @@ const GetStarted = () => {
 
         <SwiperComponent />
         {/* Buttons */}
-        <TouchableOpacity
-          onPress={() => {
-            /* handle onPress */
-          }}
-        >
+        <TouchableOpacity onPress={() => navigation.navigate("MyTabs")}>
           <View
             style={{
               backgroundColor: "#00FF80",
@@ -111,10 +110,12 @@ const GetStarted = () => {
             height: "15%",
           }}
         >
-          <Text style={{ fontSize: 12, fontWeight: "200" }}>
-            Already have an account?{" "}
-            <Text style={{ color: "#20e481" }}>Log In</Text>
-          </Text>
+          <TouchableOpacity onPress={() => navigation.navigate("Login")}>
+            <Text style={{ fontSize: 12, fontWeight: "200" }}>
+              Already have an account?{" "}
+              <Text style={{ color: "#20e481" }}>Log In</Text>
+            </Text>
+          </TouchableOpacity>
         </View>
 
         <View

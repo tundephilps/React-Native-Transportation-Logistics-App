@@ -12,9 +12,12 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 const VehicleDetails = () => {
   const [expanded, setExpanded] = useState(false);
   const [counter, setCounter] = useState(1);
+
+  const navigation = useNavigation();
 
   const handleIncrement = () => {
     setCounter(counter + 1);
@@ -42,6 +45,7 @@ const VehicleDetails = () => {
         }}
       >
         <TouchableOpacity
+          onPress={() => navigation.goBack()}
           style={{
             height: 35,
             width: 35,
@@ -366,6 +370,7 @@ const VehicleDetails = () => {
           </TouchableOpacity>
         </View>
         <TouchableOpacity
+          onPress={() => navigation.navigate("Checkout")}
           style={{
             backgroundColor: "#20e481",
             height: 52,

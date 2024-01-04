@@ -13,12 +13,14 @@ import Checkbox from "expo-checkbox";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Checkout = () => {
   const [isChecked, setChecked] = useState(false);
 
   const [counter, setCounter] = useState(1);
 
+  const navigation = useNavigation();
   const handleIncrement = () => {
     setCounter(counter + 1);
   };
@@ -42,6 +44,7 @@ const Checkout = () => {
           }}
         >
           <TouchableOpacity
+            onPress={() => navigation.goBack()}
             style={{
               height: 35,
               width: 35,
@@ -337,11 +340,7 @@ const Checkout = () => {
               request is sbuject to a further review by our team.
             </Text>
           </View>
-          <TouchableOpacity
-            onPress={() => {
-              /* handle onPress */
-            }}
-          >
+          <TouchableOpacity onPress={() => navigation.navigate("Charter")}>
             <View
               style={{
                 backgroundColor: "#00FF80", // Background color

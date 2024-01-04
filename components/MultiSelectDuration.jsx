@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { EvilIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import TextSlider from "./TextSlider";
 const MultiSelectDuration = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedDays, setSelectedDays] = useState([]);
@@ -74,29 +75,11 @@ const MultiSelectDuration = () => {
             </View>
 
             <View style={{ padding: "20%" }} />
-            <View style={{ alignSelf: "center", alignItems: "center", gap: 8 }}>
-              <Text style={{ fontWeight: "700", fontSize: 20 }}>
-                Choose One
-              </Text>
 
-              <Text style={{ fontWeight: "500", fontSize: 18, color: "gray" }}>
-                1 week
-              </Text>
-
-              <Text style={{ fontWeight: "500", fontSize: 18, color: "gray" }}>
-                2 weeks
-              </Text>
-              <Text style={{ fontWeight: "500", fontSize: 18, color: "gray" }}>
-                3 weeks
-              </Text>
-              <Text style={{ fontWeight: "500", fontSize: 18, color: "gray" }}>
-                4 weeks
-              </Text>
-            </View>
-
+            <TextSlider />
             <View
               style={{
-                height: 90,
+                height: 80,
                 justifyContent: "flex-end",
               }}
             >

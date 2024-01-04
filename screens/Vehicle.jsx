@@ -12,6 +12,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { FontAwesome } from "@expo/vector-icons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const data = [
   {
@@ -73,8 +74,9 @@ const data = [
 ];
 
 const Vehicle = () => {
+  const navigation = useNavigation();
   return (
-    <SafeAreaView style={{ height: "100%" }}>
+    <SafeAreaView style={{ height: "100%", backgroundColor: "white" }}>
       {/* Header */}
       <View
         style={{
@@ -85,6 +87,7 @@ const Vehicle = () => {
         }}
       >
         <TouchableOpacity
+          onPress={() => navigation.goBack()}
           style={{
             height: 35,
             width: 35,
@@ -112,12 +115,16 @@ const Vehicle = () => {
         </TouchableOpacity>
       </View>
       <View style={{ padding: 16 }}>
-        <Text style={{ color: "gray", fontSize: 12 }}>
+        <Text style={{ color: "gray", fontSize: 12, paddingBottom: 12 }}>
           Explore our diverse selection of vehicle categories
         </Text>
         <ScrollView showsVerticalScrollIndicator={false}>
           {data.map((item, index) => (
-            <View style={styles.card} key={index}>
+            <TouchableOpacity
+              style={styles.card}
+              key={index}
+              onPress={() => navigation.navigate("VehicleDetails")}
+            >
               <View
                 style={{
                   padding: 12,
@@ -206,7 +213,7 @@ const Vehicle = () => {
                   <Text style={{ fontWeight: "200" }}>5.0</Text>
                 </View>
               </View>
-            </View>
+            </TouchableOpacity>
           ))}
           <View style={{ padding: 59 }} />
         </ScrollView>

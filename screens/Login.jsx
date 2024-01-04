@@ -4,12 +4,14 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
 import TabSwitcher from "../components/Tabs";
 
+import { useNavigation } from "@react-navigation/native";
 import { Entypo } from "@expo/vector-icons";
 
 const Login = () => {
+  const navigation = useNavigation(); // Get the navigation object
   return (
     <SafeAreaView>
-      <View style={{ height: "100%" }}>
+      <View style={{ height: "100%", backgroundColor: "white" }}>
         {/* Header */}
         <View
           style={{
@@ -20,6 +22,7 @@ const Login = () => {
           }}
         >
           <TouchableOpacity
+            onPress={() => navigation.goBack()}
             style={{
               height: 35,
               width: 35,
@@ -64,11 +67,7 @@ const Login = () => {
           {/* Tabs */}
           <TabSwitcher />
           <View style={{ padding: 16 }} />
-          <TouchableOpacity
-            onPress={() => {
-              /* handle onPress */
-            }}
-          >
+          <TouchableOpacity onPress={() => navigation.navigate("Homepage")}>
             <View
               style={{
                 backgroundColor: "#00FF80",
@@ -138,7 +137,8 @@ const Login = () => {
               </Text>
             </View>
           </TouchableOpacity>
-          <View
+          <TouchableOpacity
+            onPress={() => navigation.navigate("CreateAccount")}
             style={{
               display: "flex",
               alignItems: "center",
@@ -150,7 +150,7 @@ const Login = () => {
               Dont have an account?{" "}
               <Text style={{ color: "#20e481" }}>Create One</Text>
             </Text>
-          </View>
+          </TouchableOpacity>
 
           <TouchableOpacity
             style={{

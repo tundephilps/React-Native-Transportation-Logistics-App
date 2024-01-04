@@ -17,8 +17,10 @@ import { Octicons } from "@expo/vector-icons";
 import SearchLocation from "../components/SearchLocation";
 import Oneway2 from "../components/Oneway2";
 import Return2 from "../components/Return2";
+import { useNavigation } from "@react-navigation/native";
 
 const Book = () => {
+  const navigation = useNavigation();
   const [selectedOption, setSelectedOption] = useState(null);
 
   const [activeIcon, setActiveIcon] = useState("");
@@ -63,6 +65,7 @@ const Book = () => {
         }}
       >
         <TouchableOpacity
+          onPress={() => navigation.goBack()}
           style={{
             height: 35,
             width: 35,

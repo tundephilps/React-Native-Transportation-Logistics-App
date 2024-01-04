@@ -67,8 +67,7 @@ const TabSwitcher = () => {
           style={[
             styles.tab,
             {
-              backgroundColor:
-                selectedTab === "email" ? "light#20e481" : "white",
+              backgroundColor: selectedTab === "email" ? "lightgreen" : "white",
             },
           ]}
         >
@@ -76,7 +75,7 @@ const TabSwitcher = () => {
             style={{
               fontSize: 13,
               fontWeight: "bold",
-              color: selectedTab === "email" ? "dark#20e481" : "gray",
+              color: selectedTab === "email" ? "darkgreen" : "gray",
             }}
           >
             Email address
@@ -88,8 +87,7 @@ const TabSwitcher = () => {
           style={[
             styles.tab,
             {
-              backgroundColor:
-                selectedTab === "phone" ? "light#20e481" : "white",
+              backgroundColor: selectedTab === "phone" ? "lightgreen" : "white",
             },
           ]}
         >
@@ -97,7 +95,7 @@ const TabSwitcher = () => {
             style={{
               fontSize: 13,
               fontWeight: "bold",
-              color: selectedTab === "phone" ? "dark#20e481" : "gray",
+              color: selectedTab === "phone" ? "darkgreen" : "gray",
             }}
           >
             Phone number

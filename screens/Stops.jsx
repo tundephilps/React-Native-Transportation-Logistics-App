@@ -10,10 +10,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import React, { useState } from "react";
 import { Foundation } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Stops = () => {
   const [numberOfStops, setNumberOfStops] = useState("");
   const [stopValues, setStopValues] = useState(Array(numberOfStops).fill(""));
+
+  const navigation = useNavigation();
 
   const handleNumberOfStopsChange = (text) => {
     const value = parseInt(text, 10) || 0;
@@ -41,6 +44,7 @@ const Stops = () => {
         }}
       >
         <TouchableOpacity
+          onPress={() => navigation.goBack()}
           style={{
             height: 35,
             width: 35,
@@ -131,11 +135,7 @@ const Stops = () => {
           padding: 12,
         }}
       >
-        <TouchableOpacity
-          onPress={() => {
-            /* handle onPress */
-          }}
-        >
+        <TouchableOpacity onPress={() => navigation.navigate("CharterPreview")}>
           <View
             style={{
               backgroundColor: "#00FF80", // Background color

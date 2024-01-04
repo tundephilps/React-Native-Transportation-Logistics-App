@@ -15,11 +15,14 @@ import { Entypo } from "@expo/vector-icons";
 import { Octicons } from "@expo/vector-icons";
 import Oneway from "../components/Oneway";
 import Return from "../components/Return";
+import { useNavigation } from "@react-navigation/native";
 
 const Charter = () => {
   const [selectedOption, setSelectedOption] = useState(null);
 
   const [activeIcon, setActiveIcon] = useState("");
+
+  const navigation = useNavigation();
 
   const handleIconClick = (iconName) => {
     setActiveIcon(iconName);
@@ -62,6 +65,7 @@ const Charter = () => {
           }}
         >
           <TouchableOpacity
+            onPress={() => navigation.goBack()}
             style={{
               height: 35,
               width: 35,
@@ -220,11 +224,7 @@ const Charter = () => {
             padding: 12,
           }}
         >
-          <TouchableOpacity
-            onPress={() => {
-              /* handle onPress */
-            }}
-          >
+          <TouchableOpacity onPress={() => navigation.navigate("Stops")}>
             <View
               style={{
                 backgroundColor: "#00FF80", // Background color

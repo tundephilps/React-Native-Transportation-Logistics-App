@@ -13,10 +13,14 @@ import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 
+import { useNavigation } from "@react-navigation/native";
+
 const Homepage = () => {
+  const navigation = useNavigation();
+
   const imageUrl = "https://via.placeholder.com/600";
   return (
-    <View style={{ height: "100%" }}>
+    <View style={{ height: "100%", backgroundColor: "white" }}>
       <View style={{ position: "relative" }}>
         <ImageBackground
           source={require("../assets/buses.jpg")}
@@ -30,7 +34,6 @@ const Homepage = () => {
               position: "absolute",
               width: "100%",
               paddingVertical: 42,
-              gap: 26,
             }}
           >
             <View
@@ -45,9 +48,10 @@ const Homepage = () => {
               </Text>
               <MaterialIcons name="headset-mic" size={28} color="white" />
             </View>
-            <Text style={{ color: "white" }}>
+            <Text style={{ color: "white", paddingTop: 12 }}>
               Sign in to your account to continue
             </Text>
+            <View style={{ height: 42 }} />
             <View
               style={{
                 display: "flex",
@@ -55,13 +59,13 @@ const Homepage = () => {
                 alignItems: "center",
                 width: "100%",
                 backgroundColor: "white",
-                paddingVertical: 12,
+                paddingVertical: 10,
                 borderRadius: 8,
                 paddingHorizontal: 16,
                 gap: 12,
               }}
             >
-              <Feather name="search" size={24} color="#20e481" />
+              <Feather name="search" size={18} color="#20e481" />
               <TextInput placeholder="Where would you like to go" />
             </View>
           </View>
@@ -78,39 +82,45 @@ const Homepage = () => {
             justifyContent: "center",
           }}
         >
-          <View style={styles.bus}>
+          <TouchableOpacity
+            style={styles.bus}
+            onPress={() => navigation.navigate("Book")}
+          >
             <Image
               style={{ height: 40, width: 40 }}
               source={require("../assets/bigbus.jpg")}
               resizeMode="cover"
             />
             <Text style={{ fontWeight: "600" }}>Book</Text>
-          </View>
-          <View style={styles.bus}>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.bus}
+            onPress={() => navigation.navigate("Vehicle")}
+          >
             <Image
               style={{ height: 40, width: 40 }}
               source={require("../assets/minibus.jpg")}
               resizeMode="cover"
             />
             <Text style={{ fontWeight: "600" }}>Rent</Text>
-          </View>
+          </TouchableOpacity>
 
-          <View style={styles.bus}>
+          <TouchableOpacity style={styles.bus}>
             <Image
               style={{ height: 40, width: 40, borderRadius: 12 }}
               source={require("../assets/G.png")}
               resizeMode="cover"
             />
             <Text style={{ fontWeight: "600" }}>EventGo</Text>
-          </View>
-          <View style={styles.bus}>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.bus}>
             <Image
               style={{ height: 40, width: 40, borderRadius: 12 }}
               source={require("../assets/dice.png")}
               resizeMode="cover"
             />
             <Text style={{ fontWeight: "600" }}>Games</Text>
-          </View>
+          </TouchableOpacity>
         </View>
 
         {/* Blackboard */}

@@ -13,12 +13,14 @@ import PhoneInput from "react-native-phone-number-input";
 
 import { Ionicons } from "@expo/vector-icons";
 
+import { useNavigation } from "@react-navigation/native";
 import { Entypo } from "@expo/vector-icons";
 
 const CreateAccount = () => {
+  const navigation = useNavigation(); // Get the navigation object
   const [phoneNumber, setPhoneNumber] = useState("");
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{ backgroundColor: "white" }}>
       <View style={{ height: "100%" }}>
         {/* Header */}
         <View
@@ -30,6 +32,7 @@ const CreateAccount = () => {
           }}
         >
           <TouchableOpacity
+            onPress={() => navigation.goBack()}
             style={{
               height: 35,
               width: 35,
@@ -83,11 +86,7 @@ const CreateAccount = () => {
             />
           </View>
           <View style={{ padding: "35%" }} />
-          <TouchableOpacity
-            onPress={() => {
-              /* handle onPress */
-            }}
-          >
+          <TouchableOpacity onPress={() => navigation.navigate("OTPScreen")}>
             <View
               style={{
                 backgroundColor: "#00FF80",

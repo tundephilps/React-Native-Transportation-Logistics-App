@@ -40,6 +40,7 @@ const OTPScreen = ({ navigation, timerActive, resetTimer }) => {
         }}
       >
         <TouchableOpacity
+          onPress={() => navigation.goBack()}
           style={{
             height: 35,
             width: 35,

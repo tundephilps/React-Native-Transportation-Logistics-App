@@ -45,7 +45,9 @@ const data = [
 
 const Discover = () => {
   return (
-    <SafeAreaView style={{ height: "100%", zIndex: 1 }}>
+    <SafeAreaView
+      style={{ height: "100%", zIndex: 1, backgroundColor: "white" }}
+    >
       <View
         style={{
           padding: 16,
