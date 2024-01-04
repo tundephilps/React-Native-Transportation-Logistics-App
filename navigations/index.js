@@ -19,6 +19,8 @@ import Homepage from "../screens/Homepage";
 import { Ionicons, FontAwesome } from "react-native-vector-icons";
 import Discover from "../screens/Discover";
 import Booking from "../screens/Booking";
+import SignIn from "../screens/BottomTabs/SignIn";
+import Location from "../screens/Location";
 
 const Tab = createBottomTabNavigator();
 
@@ -96,10 +98,10 @@ export default function AppNavigation() {
           },
         })}
       >
-        <Tab.Screen name="Home" component={Homepage} />
+        <Tab.Screen name="Home" component={Location} />
         <Tab.Screen name="Discover" component={Discover} />
-        <Tab.Screen name="Booking" component={Booking} />
-        <Tab.Screen name="SignIn" component={Login} />
+        <Tab.Screen name="Booking" component={SignIn} />
+        <Tab.Screen name="SignIn" component={SignIn} />
       </Tab.Navigator>
     );
   }

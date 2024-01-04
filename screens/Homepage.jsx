@@ -105,7 +105,10 @@ const Homepage = () => {
             <Text style={{ fontWeight: "600" }}>Rent</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.bus}>
+          <TouchableOpacity
+            style={styles.bus}
+            onPress={() => navigation.navigate("SignIn")}
+          >
             <Image
               style={{ height: 40, width: 40, borderRadius: 12 }}
               source={require("../assets/G.png")}
@@ -113,7 +116,10 @@ const Homepage = () => {
             />
             <Text style={{ fontWeight: "600" }}>EventGo</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.bus}>
+          <TouchableOpacity
+            style={styles.bus}
+            onPress={() => navigation.navigate("SignIn")}
+          >
             <Image
               style={{ height: 40, width: 40, borderRadius: 12 }}
               source={require("../assets/dice.png")}
